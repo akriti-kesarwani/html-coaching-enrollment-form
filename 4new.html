@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        .Container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 1100px;
+            width: 100%;
+            text-align: left;
+            border: 2px solid #17a8d4;
+            margin: 20px;
+        }
+
+        ins {
+            color: #007bff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            font-size: 36px;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        .input-box label {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input-box input:focus,
+        .input-box select:focus {
+            border-color: #007bff;
+        }
+
+        ins h2 {
+            color: #007bff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .button-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .alert {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+    <title>Google Registration Form</title>
+</head>
+<body>
+    <div class="Container">
+        <form action="" method="post">
+            <img src="CW COACHING.png" alt="Icon" class="icon">
+            <ins><h2> C.W. coaching enrollment form <form action=""><form action=""></h2></ins>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email-id" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number" name="phone" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="fatherName">Father's Name</label>
+                    <input type="text" placeholder="Enter Father's Name" name="fatherName" required>
+                </div>
+                <div class="input-box">
+                    <label for="motherName">Mother's Name</label>
+                    <input type="text" placeholder="Enter Mother's Name" name="motherName" required>
+                </div>
+                <div class="input-box">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" required>
+                </div>
+                <div class="input-box">
+                    <label for="10thPercentage">10th Percentage</label>
+                    <input type="text" placeholder="Enter 10th Percentage" name="10thPercentage" required>
+                </div>
+                <div class="input-box">
+                    <label for="10th school name">10th school name</label>
+                    <input type="text" placeholder="10th school name" name="10th school name" required>
+                </div>
+                <div class="input-box">
+                    <label for="12thPercentage">12th Percentage</label>
+                    <input type="text" placeholder="Enter 12th Percentage" name="12thPercentage" required>
+                </div>
+                <div class="input-box">
+                    <label for="12th college name">12th college name</label>
+                    <input type="text" placeholder="12th college name" name="12th college name" required>
+                </div>
+                <ins><h2>Choose One</h2></ins>
+                <div class="input-box">
+                    <label><input type="radio" name="gender" value="male" checked> Male</label><br>
+                    <label><input type="radio" name="gender" value="female"> Female</label><br>
+                    <label><input type="radio" name="gender" value="other"> Other</label><br>
+                </div>
+                <ins><h2>Select Course</h2></ins>
+                <div class="input-box">
+                    <select name="Course">
+                        <option value="b.tech">JEE</option>
+                        <option value="mba">NEET</option>
+                        <option value="law">CA</option>
+                        <option value="m.tech">UPSC</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter New Password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" name="confirmPassword" required>
+                </div>
+            </div>
+            <div class="alert">
+                <p>By clicking sign-up, you agree to our <a href="#">Terms,</a><a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy.</a> You may receive notifications.</p>
+            </div>
+            <div class="button-container">
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
